@@ -1,7 +1,7 @@
 /**
  * @file project_main.c
  * @author Vaishnavi DV
- * @brief Project to Blink an LED when both the sensors output is 1
+ * @brief Project to Blink an LED when person sits and turns the heater ON
  * @version 0.1
  * @date 2021-04-23
  * 
