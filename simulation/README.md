@@ -1,4 +1,4 @@
-# Blinky Project In Action
+# Activity 1
 
 |ON|OFF|
 |:--:|:--:|
