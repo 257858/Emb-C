@@ -2,5 +2,5 @@
 
 |ON|OFF|
 |:--:|:--:|
-|||
+||simulation/Person _is_seated.png|
 
