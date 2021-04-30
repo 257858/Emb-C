@@ -10,7 +10,7 @@ void init4(uint16_t value)
 
     UBRR0L = value;
     UBRR0H = (value>>8)&(0x00ff);
-    UCSR0C = (1<<UMSEL00)|(1<<UCSZ01)|(1<<UCSZ01);
+    UCSR0C = (1<<UMSEL00)|(1<<UCSZ01);
 
     UCSR0B = (1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);
 
