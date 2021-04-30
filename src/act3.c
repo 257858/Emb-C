@@ -14,26 +14,31 @@ void init3()
  * \return void
  *
  */ 
-void pwm(uint16_t temp)
-{
+char pwm(uint16_t temp)
+{       char deg;
         if(temp<200)
         {
             OCR1A=205;//20% duty cycle
+            deg='20';
             _delay_ms(20);
         }
         else if(temp<500)
         {
             OCR1A=409;//40% duty cycle
+            deg='25';
             _delay_ms(20);
         }
         else if(temp<700)
         {
             OCR1A=717;//70% duty cycle
+            deg='29';
             _delay_ms(20);
         }
         else if(temp<=1024)
         {
             OCR1A=973;//95% duty cycle
+            deg='33';
             _delay_ms(33);
         }
+        return deg;
 }
