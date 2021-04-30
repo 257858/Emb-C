@@ -11,7 +11,7 @@ FUSES = {
  *
  */
 
-void act1()
+void init1()
 {
     DDRB|=(1<<PB0);//PB0 is set as output
     DDRD&=~(1<<PD0);
