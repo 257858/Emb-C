@@ -1,4 +1,3 @@
-
 ## Activity 1
 ## In Action
 
