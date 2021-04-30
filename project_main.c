@@ -33,10 +33,10 @@ int main(void)
     InitADC();//activity 2
     init3();//activity 3
     init4(103);//activity 4
-    uint16_t temp;
-    char deg;
     while(1)
     {
+        uint16_t temp;
+        char deg;
         led();//activity 1
         temp=ReadADC(0);//read from channel 0(activity 2)
         deg=pwm(temp);//activity 3
