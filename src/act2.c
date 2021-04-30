@@ -1,3 +1,8 @@
+#include <avr/io.h>
+/** \brief InitADC(): initializing all ports for ADC
+ * \return void
+ *
+ */
 void InitADC()
 {
     ADMUX=(1<<REFS0);
