@@ -31,7 +31,7 @@ void pwm(uint16_t temp)
             OCR1A=717;//70% duty cycle
             _delay_ms(20);
         }
-        else if(temp<1024)
+        else if(temp<=1024)
         {
             OCR1A=973;//95% duty cycle
             _delay_ms(33);
