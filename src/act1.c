@@ -25,7 +25,7 @@ void init1()
  */
 void led()
 {
-    if(!(PIND &(1<<PD0)) & !(PIND &(1<<PD1))) //if both input is 1 then led is on
+    if(!(PIND &(1<<PD0)) & (!(PIND &(1<<PD1)))) //if both input is 1 then led is on
         {
             PORTB|=(1<<PB0);
             _delay_ms(20);
