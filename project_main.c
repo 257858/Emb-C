@@ -16,28 +16,29 @@
  * 
  * @return int Return 0 if the program completes successfully
  */
+/** \brief main()
+ *
+ * \return int
+ *
+ */
 #include <avr/io.h>
 #include<util/delay.h>
+#include"act1.h"
 #include "act2.h"
+#include "act3.h"
 int main(void)
 {
-    act1();
-    InitADC();
+    init1();//activity 1
+    InitADC();//activity 2
+    init3();//activity3
     uint16_t temp;
     while(1)
     {
-        if(!(PIND &(1<<PD0)) & !(PIND &(1<<PD1))) //if both input is 1 then led is on
-        {
-            PORTB|=(1<<PB0);
-            _delay_ms(20);
-        }
-        else//else led is off
-        {
-            PORTB&=~(1<<PB0);
-            _delay_ms(20);
-        }
-        temp=ReadADC(0);//read from channel 0
+        led();//activity 1
+        temp=ReadADC(0);//read from channel 0(activity 2)
+        pwm(temp);//activity3
     }
 
     return 0;
 }
+
