@@ -15,7 +15,7 @@ void init3()
  *
  */ 
 char pwm(uint16_t temp)
-{       char deg;
+{       char deg='0';
         if(temp<200)
         {
             OCR1A=205;//20% duty cycle
