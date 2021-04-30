@@ -1,12 +1,19 @@
 #include <avr/io.h>
 #include<util/delay.h>
+/** \brief init3(): initializing all ports for pwm
+ * \return void
+ *
+ */
 void init3()
 {
     TCCR1A|=(1<<COM1A1)|(1<<WGM11)|(1<<WGM10);
     TCCR1B|=(1<<WGM12)|(1<<CS11);
     DDRB|=(1<<PB1);
 }
-
+/** \brief pwm(uint16_t temp): based on ADC values temperatures are displayed by pwm
+ * \return void
+ *
+ */ 
 void pwm(uint16_t temp)
 {
             if(temp<200)
