@@ -1,12 +1,10 @@
-#include "fuse.h"
-
+#include <avr/io.h>
 FUSES = {
     .low = LFUSE_DEFAULT,
     .high = HFUSE_DEFAULT,
     .extended = EFUSE_DEFAULT
 };
 
-#include <avr/io.h>
 /** \brief function: act1 defines all the ports needed for activity1
  * \return void
  *
