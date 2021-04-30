@@ -1,7 +1,7 @@
 /**
  * @file project_main.c
  * @author Vaishnavi DV
- * @brief Project to Blink an LED when person sits and turns on the heater and adjusts the temperatue
+ * @brief Project to Blink an LED when person sits and turns on the heater and adjusts the temperatue.
  * @version 0.1
  * @date 2021-04-23
  * 
