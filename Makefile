@@ -4,7 +4,8 @@ BUILD_DIR = Build
 
 # All Source code files
 SRC = project_main.c\
-src/act1.c
+src/act1.c\
+src/act2.c
 
 
 # All header file paths
