@@ -6,6 +6,10 @@
 |:--:|:--:|
 |![ON](simulation/Person_is_seated_and_turned_heater_on.png)|![OFF](simulation/Person%20_is_seated.png)|
 
+# Activity 2
+## ADC
+![ADC](https://github.com/257858/Embedded_C/blob/main/simulation/Activity_2.png)
+
 #### CI and Code Quality
 
 |Build|Cppcheck|
