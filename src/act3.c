@@ -16,24 +16,24 @@ void init3()
  */ 
 void pwm(uint16_t temp)
 {
-            if(temp<200)
+        if(temp<200)
         {
-            OCR1A=20;
+            OCR1A=205;//20% duty cycle
             _delay_ms(20);
         }
         else if(temp<500)
         {
-            OCR1A=25;
+            OCR1A=409;//40% duty cycle
             _delay_ms(20);
         }
         else if(temp<700)
         {
-            OCR1A=29;
+            OCR1A=717;//70% duty cycle
             _delay_ms(20);
         }
         else if(temp<1024)
         {
-            OCR1A=25;
+            OCR1A=973;//95% duty cycle
             _delay_ms(33);
         }
 }
