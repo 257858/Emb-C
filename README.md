@@ -9,7 +9,7 @@
 ## ADC
 ![ADC](https://github.com/257858/Embedded_C/blob/main/simulation/Activity_2.png)
 
-#### CI and Code Quality
+### CI and Code Quality
 
 |Build|Cppcheck|
 |:--:|:--:|
