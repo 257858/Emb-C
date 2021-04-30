@@ -4,7 +4,8 @@ BUILD_DIR = Build
 
 # All Source code files
 SRC = project_main.c\
-src/fuse.c
+#src/fuse.c
+-I src
 
 # All header file paths
 INC = -I inc
