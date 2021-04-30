@@ -26,19 +26,22 @@
 #include "act1.h"
 #include "act2.h"
 #include "act3.h"
+#include "act4.h"
 int main(void)
 {
     init1();//activity 1
     InitADC();//activity 2
-    init3();//activity3
+    init3();//activity 3
+    init4(103);//activity 4
     uint16_t temp;
+    char deg;
     while(1)
     {
         led();//activity 1
         temp=ReadADC(0);//read from channel 0(activity 2)
-        pwm(temp);//activity3
+        deg=pwm(temp);//activity 3
+        uart_write_data(deg);//activity 4
     }
 
     return 0;
 }
-
